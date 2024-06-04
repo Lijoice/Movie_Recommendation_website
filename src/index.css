@@ -1,0 +1,286 @@
+/* CSS styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  line-height: inherit;
+  background-color: #1f2937; 
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ee6b07;
+  padding: 20px 30px; 
+}
+
+.Header p {
+  color: white;
+  font-family: fantasy;
+  font-size: 30px;
+  padding: 0 20px;
+  text-decoration: overline;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px; 
+  
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px; 
+  padding: 10px; 
+}
+
+.buttons button {
+  padding: 8px 16px; 
+  font-size: 14px; 
+  border: none;
+  border-radius: 4px;
+  background-color: #df6e17;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.buttons button:hover {
+  box-shadow: 0 0 20px rgba(255, 98, 0, 0.808);
+}
+
+.movies {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px; 
+}
+
+.movie {
+  display: flex;
+  margin-bottom: 20px; /* Adjust spacing between movies */
+  border: 1px solid #ccc; /* Add border around each movie */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.movie_image {
+  width: 20%;
+  margin: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie_image img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: 2px solid white;
+  outline: none; /* Remove outline */
+}
+
+.movie_image h4 {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  margin-top: 10px; 
+}
+
+.movie_image:hover {
+  transform: scale(1.05); 
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.search h1{
+  color:white;
+  font-size: xx-large;
+}
+
+
+.h1tag h1 {
+    text-align: center;
+    color: gold;
+    font-style: italic;
+    font-size: xx-large;
+    padding: 30px;
+    border: 2px solid white;
+}
+.Header img{
+  width: 50px;
+  max-height: 50px;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-family: fangsong;
+  font-size: large;
+  color: gold;
+  padding: 30px;
+  font-style: oblique;
+  text-align: center;
+}
+
+.movies{
+  margin:10px;
+}
+
+.releases{
+  margin:20px;
+}
+
+
+.buttons button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.movies p{ 
+  color:white;
+   display: flex; 
+   justify-content: center; 
+   text-align: center;
+   }
+.Header h1{ 
+      text-align: center;
+       align-items: center; 
+  }
+
+.footer {
+     background-color: #333; 
+     color: #fff; padding: 20px;
+     } 
+.footersection {
+     display: flex; 
+     justify-content: space-between; 
+     align-items: center;
+     } 
+
+.footersection h1 { 
+    font-size: 24px; 
+    margin: 0;
+   } 
+   .footersection ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+  } 
+  .footersection ul li { 
+    font-size: 18px;
+   } 
+  .h4tag {
+     font-size: 16px; 
+     margin-top: 20px;
+     } 
+  .footer{
+       width: 100%;
+       padding: 35px;
+       z-index: 100;
+       display: flex;
+       align-items: center;
+       justify-content: center; 
+       background-color: rgba(20, 20, 20, 0.863);
+   } 
+   .footer p{ 
+    color: aliceblue; 
+  }
+
+  .Header{
+    display: flex;
+    justify-content: center;
+  }
+
+  .Header h1{
+    font-size: x-large;
+  }
+
+
+.image {
+  position: relative;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.h1tag {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.movies {
+  display: flex;
+  flex-direction: column; /* Change flex direction to column */
+  max-width: 1000px; /* Adjust the max width as needed */
+  margin: 0 auto; /* Center align the movies */
+}
+
+.movie {
+  display: flex;
+  margin-bottom: 20px; /* Adjust spacing between movies */
+  border: 1px solid #ccc; /* Add border around each movie */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.movie_image {
+  width: 40%; /* Adjust the width of the image container */
+}
+
+.movie_image img {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+  outline: none; /* Remove outline */
+}
+
+.movie_details {
+  width: 60%; /* Adjust the width of the details container */
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Arrange details vertically */
+  align-items: flex-start; /* Align details to the start */
+}
+
+@media (max-width: 600px) {
+  .movie {
+      width: calc(100% - 20px); /* Adjust width for single movie per column on smaller screens */
+  }
+}
+
+.movie_image img {
+  width: 250px;
+}
+
+.movie_details h1 {
+  color: white;
+  font-size: xx-large;
+  padding: 10px;
+}
+
+.movie_details p, .movie_details h4 {
+  font-size: larger;
+  color: white;
+  padding: 10px;
+}
+
+.movie_details p{
+  margin-right: 30px;
+}
